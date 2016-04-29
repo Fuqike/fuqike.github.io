@@ -18,6 +18,29 @@ layout: default
         <h1 class="entry-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
         <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
         {{ content }}
+        
+        <div id="disqus_container">
+            <a onclick="return false;" class="comment" href="#">点击查看评论</a>
+            <div id="disqus_thread"></div>
+            <script>
+			
+	$('#disqus_container .comment').on('click',function(){
+            $(this).html('加载中...');
+            var that = this;
+			var d = document, s = d.createElement('script');
+        	s.src = '//fuqike.disqus.com/embed.js';
+        	s.setAttribute('data-timestamp', +new Date());
+        	(d.head || d.body).appendChild(s);
+			setTimeout(function () { 
+        		$(that).remove();
+    		}, 1000);
+			
+    });
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+
     </div>
 
     <div class="sidenav">
