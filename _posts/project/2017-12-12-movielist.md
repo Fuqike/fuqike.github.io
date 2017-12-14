@@ -29,5 +29,4 @@ category: project
 <br>
 <p style="text-align:center;">-- 持续添加 --</p>
 
-
-![onepuchman](/images/onepuchman.gif)
+<p style="width:356px; height:200px; background:url(/images/onepuchman.gif); display:block; text-align:center; margin:10px auto 30px;"></p>
