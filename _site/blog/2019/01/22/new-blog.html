@@ -20,7 +20,7 @@
             <a class="home-follow" href="#" title="Contact Me">+</a>
         </div>
         <div class="home-contact">
-            <a href="http://weibo.com/2144302882" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+            <a href="#" target="_blank" style="margin-left:-5px;"><img src="" alt="" width="25"/></a>
             <a href="http://www.instagram.com/ifuqike/" target="_blank" style="text-align:center;"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"></a>
             <a href="#" target="_blank" style="text-align:right"></a>
         </div>
@@ -39,8 +39,8 @@
 
 <div id="content">
     <div class="entry">
-        <h1 class="entry-title"><a href="/blog/2016/04/28/new-blog.html" title="快速使用Github Pages建独立博客">快速使用Github Pages建独立博客</a></h1>
-        <p class="entry-date">2016-04-28</p>
+        <h1 class="entry-title"><a href="/blog/2019/01/22/new-blog.html" title="快速使用Github Pages建独立博客">快速使用Github Pages建独立博客</a></h1>
+        <p class="entry-date">2019-01-22</p>
         <p><a href="http://github.com" title="Github">Github</a>很好的将代码和社区联系在了一起，于是发生了很多有趣的事情，世界也因为他美好了一点点。Github作为现在最流行的代码仓库，已经得到很多大公司和项目的青睐，比如<a href="https://github.com/jquery/jquery" title="jQuery@github">jQuery</a>、<a href="https://github.com/twitter/bootstrap" title="Twitter@github">Twitter</a>等。为使项目更方便的被人理解，介绍页面少不了，甚至会需要完整的文档站，Github替你想到了这一点，他提供了<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>的服务，不仅可以方便的为项目建立介绍站点，也可以用来建立个人博客。</p>
 
 <p>Github Pages有以下几个优点：</p>
@@ -67,22 +67,20 @@
 
 <h2 id="需要的软件">需要的软件</h2>
 <ol>
-  <li>ruby （<a href="http://rubyinstaller.org/downloads/" title="http://rubyinstaller.org/downloads/">http://rubyinstaller.org/downloads/</a>）</li>
-  <li>rubygems （<a href="https://rubygems.org/pages/download" title="https://rubygems.org/pages/download">https://rubygems.org/pages/download</a>）</li>
-  <li>DevKit （<a href="http://rubyinstaller.org/downloads/" title="http://rubyinstaller.org/downloads/">http://rubyinstaller.org/downloads/</a>）</li>
+  <li>ruby [Ruby+Devkit 2.6.0-1 (x64)] （<a href="http://rubyinstaller.org/downloads/" title="http://rubyinstaller.org/downloads/">http://rubyinstaller.org/downloads/</a>）</li>
+  <li>rubygems [rubygems-3.0.2]（<a href="https://rubygems.org/pages/download" title="https://rubygems.org/pages/download">https://rubygems.org/pages/download</a>）</li>
   <li>rails</li>
   <li>jekyll</li>
-  <li>python （<a href="https://www.python.org/downloads/" title="https://www.python.org/downloads/">https://www.python.org/downloads/</a>）</li>
   <li>markdown （<a href="http://www.markdownpad.com/" title="http://www.markdownpad.com/">http://www.markdownpad.com/</a>）</li>
   <li>github for windows （<a href="https://desktop.github.com/" title="https://desktop.github.com/">https://desktop.github.com/</a>）</li>
 </ol>
 
-<p><img src="/images/githubpages/install.jpg" alt="program" /></p>
+<p><img src="/images/githubpages/install.jpg" alt="program" />（图2016-04-28，作废）</p>
 
 <h2 id="搭建本地所需要的环境">搭建本地所需要的环境</h2>
 
 <h3 id="安装rubyinstaller">安装rubyinstaller</h3>
-<p>按照提示安装，勾选Add Ruby executables to your PATH.
+<p>按照提示安装，成功后再按1，安装MSYS2
 <img src="/images/githubpages/ruby.png" alt="ruby" />
 Win7 64位默认安装位置：C:\
 验证ruby是否安装成功：cmd中</p>
@@ -108,59 +106,25 @@ Win7 64位默认安装位置：C:\
 
 <p>显示版本号则说明正常.</p>
 
-<h3 id="安装devkit-mingw64">安装DevKit-mingw64</h3>
-
-<p>在C:\Ruby23-x64\目录下新建DevKit文件夹，运行DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe后会提示解压目录，选择C:\Ruby23-x64\DevKit.</p>
-
-<p>在C:\Ruby23-x64\DevKit中打开cmd，运行</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby dk.rb init
-</code></pre></div></div>
-
-<p>会提示配置config.yml.</p>
-
-<p><img src="/images/githubpages/DevKit.png" alt="ruby" /></p>
-
-<p>打开C:\Ruby23-x64\DevKit目录下的config.yml，将ruby根目录加入到配置文件中，这里是C:/Ruby23-x64.如果有了就不需要再加.注意格式.</p>
-
-<p><img src="/images/githubpages/DevKit2.png" alt="ruby" /></p>
-
-<p>执行</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby dk.rb install
-</code></pre></div></div>
-
 <h3 id="替换rubygem库地址">替换rubyGem库地址</h3>
 
 <p>继续执行下步前 先替换rubyGem库地址（相当重要，因为国内访问外网有线路问题，不仅更新速度慢，而且还会导致更新失败）</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem sources –remove https://rubygems.org/
 
-gem sources -a https://ruby.taobao.org/ 
-</code></pre></div></div>
+gem sources -a https://gems.ruby-china.com/
 
-<p>(注意：一定是https，淘宝已暂停http的ruby服务)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem sources -l
+gem sources -l
 </code></pre></div></div>
 
 <p>验证一下.</p>
 
 <p><img src="/images/githubpages/rubytaobao.png" alt="ruby" /></p>
 
-<p>推荐的是淘宝的地址，但是实际在我替换过程中多次都无法添加成功</p>
-
-<p>所以我换了其他镜像地址(我用的是山东理工的)：</p>
-
-<ul>
-  <li>中山大学：http://mirror.sysu.edu.cn/rubygems/</li>
-  <li>山东理工大学：http://ruby.sdutlinux.org/</li>
-  <li>淘宝网：http://ruby.taobao.org/</li>
-</ul>
-
 <h3 id="安装rails">安装rails</h3>
 
-<p>md运行</p>
+<p>cmd运行</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install rails
 </code></pre></div></div>
@@ -472,7 +436,7 @@ title: Blogging Like a Hacker
         <h2>Blog</h2>
         <ul class="artical-list">
         
-            <li><a href="/blog/2016/04/28/new-blog.html">快速使用Github Pages建独立博客</a></li>
+            <li><a href="/blog/2019/01/22/new-blog.html">快速使用Github Pages建独立博客</a></li>
         
         </ul>
 
