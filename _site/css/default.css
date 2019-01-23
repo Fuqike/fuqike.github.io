@@ -66,7 +66,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .entry p+ul {margin-top:-20px;}
 .entry ul li{margin-bottom:5px;list-style:disc;line-height:1.5em;}
 .entry ol{margin-bottom:25px;margin-left:25px;}
-.entry ol li{margin-bottom:5px;list-style:decimal;line-height:1.1em;}
+.entry ol li{margin-bottom:5px;list-style:decimal;line-height:1.5em;}
 .entry blockquote{margin-left:25px;font-size:14px;font-style:italic}
 .entry img{max-width:670px;display:block;margin:10px auto;}
 
@@ -90,7 +90,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     background-image:url(../images/2.jpg);
 }
 .project .aside{
-    background-image:url(https://dnqgz544uhbo8.cloudfront.net/_/fp/img/bestof/june-2013.CaUUbO2jIECgCmldhmxCCA.jpg)
+    background-image:url(../images/3.jpg)
 }
 .index-content .section { margin-left:30%; padding-top:80px; padding-right:15%; ;}
 
@@ -178,7 +178,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     .index-content .artical-cate { width:85%; }
     .sidenav {display:none;}
     .entry {float:none;width:auto;background:transparent;padding:0;box-shadow:none;}
-    #content {width:85%;margin:100px auto 50px; }
+    #content {width:90%;margin:100px auto 50px; }
 }
 @media (max-width: 1300px){
     .home-menu { position:absolute; }
