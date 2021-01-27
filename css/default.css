@@ -52,16 +52,16 @@ pre code{background-color:transparent;border:none;padding:0;word-wrap:normal;}
 pre ol{margin-left:25px;list-style-type:decimal;}
 
 /************layout style*****************/
-#content {width:1060px;margin:0 auto 60px;min-height:400px;height:auto !important;height:400px; }
+#content {width:960px;margin:0 auto 60px;min-height:400px;height:auto !important;height:400px; }
 
 
 /****************entry style**************/
-.sidenav { width:260px;  float:left; padding:20px; margin-top: 50px;}
+.sidenav { width:160px;  float:right; padding:20px; margin-top: 50px;}
 .sidenav h2 { font-size:18px; color:#333; margin-bottom:15px; }
 .sidenav ul { margin-bottom:50px; }
 .sidenav li { margin-bottom:12px; word-break: break-all;}
 .sidenav a { color:#555; font-size:14px; display:block;}
-.entry{ width:680px; float:right; background:#fff; padding:30px; padding-top: 60px;}
+.entry{ width:680px; float:left; background:#fff; padding:30px; padding-top: 60px;}
 .entry ul{margin-bottom:25px;margin-left:25px;}
 .entry p+ul {margin-top:-20px;}
 .entry ul li{margin-bottom:5px;list-style:disc;line-height:1.5em;}
