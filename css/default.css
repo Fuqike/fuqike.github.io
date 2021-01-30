@@ -639,7 +639,7 @@ h3.about {
 
 @media screen and (max-width: 750px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
     #content {
         width: 85%;
