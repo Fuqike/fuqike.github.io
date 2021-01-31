@@ -461,7 +461,7 @@ pre ol {
 }
 
 .index-content .artical-cate li a,
-.index-content .artical-cate li a:visited {
+.index-content .artical-cate li a{
     display: inline-block;
     zoom: 1;
     color: #000;
@@ -733,7 +733,7 @@ h3.about {
     }
     #content {
         width: 90%;
-        margin: 100px auto 50px;
+        margin: 100px auto 70px;
     }
 }
 
@@ -746,3 +746,85 @@ h3.about {
 .highlighter-rouge {
     margin-top: 25px;
 }
+
+
+/* dark */
+.index-content .artical-cate li a{
+    color: #000;
+}
+body.dark {
+    background: #1e2128;
+}
+
+.dark .sidenav a {
+    color: #9899ab;
+}
+
+.dark .sidenav h2 {
+    color: #ccc;
+}
+
+.dark .entry {
+    background: #22252d;
+}
+
+.dark .entry-title,
+.entry-title a {
+    color: #ccc;
+}
+
+.dark p {
+    color: #ccc;
+}
+
+.dark a {
+    color: #9899ab;
+}
+
+.dark .entry ul li {
+    color: #ccc;
+}
+
+.dark #menuIndex ul li.on {
+    background-color: #000;
+}
+
+.dark .entry-title a,
+.dark .home-icon-con a {
+    color: #ccc;
+}
+
+.dark h3,
+.dark h2,
+.dark h4,
+.dark h5 {
+    color: #ccc;
+}
+
+.dark code {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.dark .entry ol li {
+    color: #ccc;
+}
+
+.dark .index-content h2 a {
+    color: #ccc;
+}
+
+
+.dark .index-content .artical-cate li a{
+    color: #ccc;
+}
+
+.dark .index-content .artical-cate li.on span {
+    color: #f9ea82;
+}
+
+.dark a.external:hover {
+    background-position: right 4px;
+}
+
